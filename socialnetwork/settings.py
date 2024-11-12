@@ -39,8 +39,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 INSTALLED_APPS = [
-    'social',
     'landing',
+    'social.apps.SocialConfig',
 
     'crispy_forms',
     'crispy_bootstrap4',
@@ -152,3 +152,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'post-list'
 ACCOUNT_EMAIL_REQUIRED = True
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
